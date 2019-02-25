@@ -1,0 +1,14 @@
+.c-icon-media {
+  margin-bottom: 2rem;
+  color: $color-white;
+
+  &__icon {
+    @include inuit-font-size(32px);
+  }
+
+  &__body {
+    @include inuit-font-size(20px);
+    font-style: normal;
+  }
+
+}

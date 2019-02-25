@@ -1,9 +1,8 @@
 doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/css/main.css')
+html(lang=currentLocale, class='page  page--' + pageName)
+  include ../includes/head
   body
     //- include ../includes/header
 
-    block content
+    main(role='main', itemprop='mainContentOfPage', itemscope, itemtype='http://schema.org/Blog')
+      block content

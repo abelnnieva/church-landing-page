@@ -3,7 +3,12 @@ const express = require('express');
 const router = express.Router();
 
 /* GET home page. */
-router.get('/', (req, res, next) => res.render('pages/index', { title: 'IE Chamberi' }));
+router.get('/', (req, res, next) => {
+  res.render('pages/index', {
+    pageName: 'index',
+    currentLocale: res.locale
+  });
+});
 
 // router.use('/nosotros', require('./about-us'));
 

@@ -1,0 +1,16 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+
+  if title
+    title #{title} | #{__('paginas.inicio.titulo')}
+  else
+    title #{__('paginas.inicio.titulo')} | #{__('paginas.inicio.subtitulo')}
+
+  // Prefetch DNS for external assets (Twitter widgets etc)
+  link(rel='dns-prefetch', href='//www.google-analytics.com')
+  link(rel='dns-prefetch', href='//use.typekit.net')
+
+  // Stylesheet
+  link(rel='stylesheet', href='/css/main.css')
+  link(rel='stylesheet', href='https://use.typekit.net/tyy5sto.css')

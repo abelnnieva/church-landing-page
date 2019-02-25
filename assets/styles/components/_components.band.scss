@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #BAND
+   ========================================================================== */
+
+.c-band {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+  .c-band--landing {
+    @include inuit-font-size(24px, $important: true);
+    position: absolute;
+    height: 100%;
+    display: table;
+    background-image: url('/images/index.background.jpg');
+
+    .c-band__wrapper {
+      display: table-cell;
+      vertical-align: middle;
+      background: rgba(0 , 0, 0, .7);
+    }
+
+    .c-band__title {
+      color: $color-soft-orange;
+    }
+  }

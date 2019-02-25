@@ -3,13 +3,14 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
+const i18n = require('i18n');
 const app = express();
 
 const routes = require('./routes');
 
 let sassMiddlewareOptions = {
-  src: path.join(__dirname, '/assets/styles'),
-  dest: path.join(__dirname, '/public/css'),
+  src: path.join(__dirname, 'assets/styles'),
+  dest: path.join(__dirname, 'public/css'),
   indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true,
   prefix: '/css'
@@ -18,6 +19,16 @@ let sassMiddlewareOptions = {
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+// i18n setup
+i18n.configure({
+  locales: ['es', 'en'],
+  defaultLocale: 'es',
+  directory: path.join(__dirname, 'locales'),
+  objectNotation: true,
+  queryParameter: 'lang'
+});
+app.use(i18n.init);
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -36,7 +47,7 @@ if (process.env.NODE_ENV === 'production') {
 app.use(sassMiddleware(Object.assign(sassMiddlewareOptions, {
   debug: true
 })));
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // mount the routes
 app.use(routes);

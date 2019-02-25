@@ -1,1 +1,40 @@
 extends ../layouts/layout
+
+block content
+  section(class='c-band  c-band--landing')
+    div(class='c-band__wrapper')
+      h1(class='c-heading-main  c-band__title') #{__('paginas.inicio.titulo')}
+
+      div(class='o-layout  o-layout--auto  o-layout--center  o-layout--large')
+
+        div(class='o-layout__item')
+          div(class='o-media  c-icon-media')
+            div(class='o-media__img  c-icon-media__icon')
+              svg(class='o-icon  o-icon-location', aria-hidden='true', focusable='false')
+                use(xlink:href='/sprite/icons.svg#o-icon-location')
+            address(class='o-media__body  c-icon-media__body')
+              strong #{__('paginas.inicio.direccion')}
+              br
+              span 28010 — Madrid
+              br
+              span +34 914 347 781‬
+
+        div(class='o-layout__item')
+          div(class='o-media  c-icon-media')
+            div(class='o-media__img  c-icon-media__icon')
+              svg(class='o-icon  o-icon-clock', aria-hidden='true', focusable='false')
+                use(xlink:href='/sprite/icons.svg#o-icon-clock')
+            div(class='o-media__body  c-icon-media__body')
+              strong #{__('paginas.inicio.jueves')}
+              br
+              span #{__('paginas.inicio.cultoOracion')}
+                strong  / 19:00h
+              br
+              br
+              strong #{__('paginas.inicio.domingo')}
+              br
+              span #{__('paginas.inicio.cultoComunion')}
+                strong  / 11:00h
+              br
+              span #{__('paginas.inicio.cultoEvangelio')}
+                strong  / 18:00h

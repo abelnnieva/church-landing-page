@@ -1,0 +1,14 @@
+{
+  "paginas": {
+    "inicio": {
+      "titulo": "Iglesia Evangélica de Chamberí",
+      "subtitulo": "Jesucristo es el Señor",
+      "direccion": "Calle de Trafalgar 32",
+      "jueves": "Jueves",
+      "cultoOracion": "Estudio bíblico y oración",
+      "domingo": "Domingo",
+      "cultoComunion": "Cena del Señor y predicación",
+      "cultoEvangelio": "Predicación del Evangelio"
+    }
+  }
+}

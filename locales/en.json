@@ -1,0 +1,14 @@
+{
+  "paginas": {
+    "inicio": {
+      "titulo": "Chamberí's Evangelical Church",
+      "subtitulo": "Jesus Christ is the Lord",
+      "direccion": "Trafalgar Street 32",
+      "jueves": "Thursday",
+      "cultoOracion": "Bible study and prayer",
+      "domingo": "Sunday",
+      "cultoComunion": "Lord's Supper and preaching",
+      "cultoEvangelio": "Gospel meeting"
+    }
+  }
+}
