@@ -35,18 +35,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// styles css preprocessor setup
 if (process.env.NODE_ENV === 'production') {
-  // styles css preprocessor setup
-  return app.use(sassMiddleware(Object.assign(sassMiddlewareOptions, {
+  app.use(sassMiddleware(Object.assign(sassMiddlewareOptions, {
     outputStyle: 'compressed',
     debug: false
   })));
+} else {
+  app.use(sassMiddleware(Object.assign(sassMiddlewareOptions, {
+    debug: true
+  })));
 }
 
-// styles css preprocessor setup
-app.use(sassMiddleware(Object.assign(sassMiddlewareOptions, {
-  debug: true
-})));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // mount the routes
