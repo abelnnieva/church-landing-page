@@ -1,6 +1,11 @@
 extends layouts/layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  section(class='o-wrapper  [ c-band  c-band--full-height ]')
+    h1(class='c-heading-subpage') #{__('paginas.error.titulo')}
+
+    p(class='c-heading-subhead') #{__('paginas.error.mensaje')}
+
+    a(href='/', class='c-btn  c-btn--link  c-btn--primary  c-btn--large') #{__('botones.paginaInicio')}
+      svg(class='o-icon  o-icon-arrow-right', aria-hidden='true', focusable='false')
+        use(xlink:href='/sprite/icons.svg#o-icon-arrow-right')

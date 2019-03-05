@@ -9,6 +9,13 @@
       "domingo": "Domingo",
       "cultoComunion": "Cena del Señor y predicación",
       "cultoEvangelio": "Predicación del Evangelio"
+    },
+    "error": {
+      "titulo": "404 Página no encontrada",
+      "mensaje": "No pudimos encontrar la página que estaba buscando. Verifique la URL que intentaba visitar, o simplemente regrese a nuestra página de inicio."
     }
+  },
+  "botones": {
+    "paginaInicio": "Ir a la página de inicio"
   }
 }

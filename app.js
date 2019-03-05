@@ -60,7 +60,9 @@ app.use((err, req, res, next) => {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', {
+    title: res.__('paginas.error.titulo')
+  });
 });
 
 module.exports = app;

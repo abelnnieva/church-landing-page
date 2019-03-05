@@ -9,6 +9,13 @@
       "domingo": "Sunday",
       "cultoComunion": "Lord's Supper and preaching",
       "cultoEvangelio": "Gospel meeting"
+    },
+    "error": {
+      "titulo": "404 Page not found",
+      "mensaje": "We could not find the page that I was looking for. Check the URL you are trying to visit, or simply return to our homepage."
     }
+  },
+  "botones": {
+    "paginaInicio": "Go to homepage"
   }
 }

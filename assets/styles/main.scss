@@ -48,6 +48,7 @@ $inuit-font-size-h6:  20px;
 @import "../../node_modules/inuitcss/elements/elements.tables";
 @import "elements/elements.links";
 @import "elements/elements.types";
+@import "elements/elements.headings";
 
 
 
@@ -73,7 +74,7 @@ $inuit-font-size-h6:  20px;
 
 
 // COMPONENTS
-// @import "components/components.buttons";
+@import "components/components.buttons";
 // @import "components/components.page-head";
 // @import "components/components.site-nav";
 @import "components/components.headings";

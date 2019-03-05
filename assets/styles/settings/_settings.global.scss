@@ -14,3 +14,11 @@ $global-transition: all 300ms ease-in-out !default;
 
 
 $global-fonts: brandon-grotesque, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$headings-fonts: essonnes-display, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+$spacing-unit:                  $inuit-global-spacing-unit;
+$spacing-unit-tiny:             $inuit-global-spacing-unit-tiny;
+$spacing-unit-small:            $inuit-global-spacing-unit-small;
+$spacing-unit-large:            $inuit-global-spacing-unit-large;
+$spacing-unit-huge:             $inuit-global-spacing-unit-huge;

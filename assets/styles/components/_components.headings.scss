@@ -2,9 +2,31 @@
    #HEADINGS
    ========================================================================== */
 
-.c-heading-main {
+.c-heading-landing {
   @include inuit-font-size(40px);
   @include font-weight(regular);
+  font-family: $global-fonts;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
+}
+
+
+
+
+
+.c-heading-subpage {
+  @include inuit-font-size(70px);
+  margin-bottom: $spacing-unit-small;
+}
+
+
+
+
+
+.c-heading-subhead {
+  @include inuit-font-size(20px);
+  margin-bottom: $spacing-unit;
+  color: $color-gray;
+  max-width: 600px;
 }
